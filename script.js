@@ -116,8 +116,8 @@ if (resetColors && pageColor && textColor) {
   resetColors.addEventListener("click", function() {
     document.body.style.backgroundColor = ""; //clear the board when the reset button gets hit
     document.body.style.color = "";
-    pageColor.value = "#acffa1ff";
-    textColor.value = "#272727ff";
+    pageColor.value = "#acffa1";
+    textColor.value = "#272727";
     });
 }   
 
@@ -347,4 +347,5 @@ document.addEventListener("DOMContentLoaded", function() {
     `;
     resultDiv.scrollIntoView({ behavior: "smooth" }); //scroll to the result
   });
+
 });
