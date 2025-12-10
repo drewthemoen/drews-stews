@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Wat</title>
+</head>
+<body>
+    <br>
+    <hr><h2>Wat</h2><hr>
+    <cite>"Too often, life is like a pot of stew that we made without a recipe."<br><sup>Craig D. Lounsbrough</sup></cite>
+        <nav class="nav-hidden">
+            <ol>Navigation Menu</ol>
+            <li><a href="index.html">Home Page</a></li>
+            <li><a href="review.html">Review Page</a></li>
+            <li><a href="contact.html">Contact Page</a></li>
+            <li><a href="sitemap.html">Enstewclopedia</a></li>
+            <li><a href="stewquiz.html">Stew Quiz</a></li></li>
+        </nav>
+        <aside id="bookmarkpanel" class="nav-hidden">
+            <p>Bookmarks<p>
+            <dl id="bookmarklist"></dl>
+            <button id="addbookmark">Save Stew</button>
+            <button id="clearbookmarks">Clear Bookmarks</button>
+        </aside>
+
+        <div class="pageSettings"> 
+            <label for="pagecolorpicker">Page Color: </label>
+            <input type="color" id="pagecolorpicker">
+            <label for="textcolorpicker">Text Color: </label>
+            <input type="color" id="textcolorpicker">
+            <label for="fontsizecontrol">Font size:</label>
+            <input type="range" id="fontsizecontrol" min="8" max="40" value="24">
+            <span id="fontsizevalue">24px</span>
+        </div>
+        <div class="buttons">
+            <button id="resetcolors">Reset Colors</button>
+            <button id="navbutton">Navigation Menu</button>
+            <button id="randombutton">Random Stew</button>
+            <button id="bookmarkbutton">Bookmarks</button>
+            <button id="home">Home</button>
+        </div>
+        
+    <figure>
+    <sup>Note: Clicking the picture below will take you to this stew's wikipedia page.</sup>
+    <br>
+    <a href="https://en.wikipedia.org/wiki/Wat_(food)" target="_blank"><img id="stewpic" src="dorowat.png" alt="Doro Wat" width="500" height="500"></a>
+    <figcaption><strong>Doro Wat</strong></figcaption>
+    </figure>
+    <br>
+    <table>
+        <caption><b>Information Per Serving</b></caption>
+        <tr>
+            <th>Cost</th>       
+            <th>Time</th>
+            <th>Cals</th>
+        </tr>
+        <tr>
+            <td>Variable</td>
+            <td>140 Mins</td>
+            <td>558 kcal</td>
+        </tr>
+    </table>
+    <br>
+    <sup>These estimations are based on the following information and may vary: <a href="http://diversivore.com/doro-wat/" target="_blank">Diversivore</a></sup>
+    <br>
+    <br>
+    <h2>Stew Analysis</h2>
+    <br>
+    <br>
+    <p class="stewparagraph">Wat is an Ethiopian and Eritrean stew.  If you’ve seen this stew around before, 
+        you might be familiar with it in the form of Doro Wat, which specifically incorporates chicken.  
+        But again, like pretty much all other stews in this bracket, switching up even a couple of ingredients is gonna get you an
+        entirely different stew. The one link they are all for the most part going to have in common is the use of <a href="https://en.wikipedia.org/wiki/Berbere" target="_blank">berbere spice</a>.
+        This is what gives Wat its kick.
+        <br>
+        <br>
+        <br>
+        Another component synonmyous with Wat is <a href="https://en.wikipedia.org/wiki/Niter_kibbeh" target="_blank">niter kibbeh</a>, a type of <a href="https://en.wikipedia.org/wiki/Clarified_butter" target="_blank">clarified butter</a>. It's
+        like ghee, another type of clarified butter featured on the <a href="stewnihari.html">Nihari</a> page.
+        Those types of butters work great if you still want the buttery flavor without risking the butter burning right away.
+
+    </p>
+    <br>
+    <br>
+    <h2>Fundamental Ingredients</h2>
+    <p class="stewparagraph"><i>★ Another popular variation on Wat is called <a href="https://www.daringgourmet.com/misir-wat-ethiopian-spiced-red-lentils/" target="_blank">Misir Wat</a>, which uses lentils instead of meat.<br>
+        That is actually the stew you'll see below!
+    </p>
+    <div id="picwrap">
+        <img id="stewpic" src="misirwat.jpg" alt="Misir Wat" width="500">
+        <img id="iconpic" src="ingredientsicon.png" alt="ingredients icon" width="300">
+    </div>
+    <br>
+    <br>
+    <p>Below, I've included a checklist for the most necessary ingredients.<sup>This may change a lot with this kind of stew.</sup></p>
+    <dl id="ingredients">
+        <li><input type="checkbox">Niter kibbeh.</li>
+        <li><input type="checkbox">Berbere.</li>
+        <li><input type="checkbox">Any kind of fat like lard or oil.</li>
+        <li><input type="checkbox">Ginger n' Garlic.</li>
+        <li><input type="checkbox">Lentils or meat. Depends on the kind of Wat.</li>
+        <li><input type="checkbox">Broth. For the stew base.</li>
+        <li></li>
+    </dl>
+    <hr>
+    <p class="stewparagraph"><i>★ One last recipe for the road, the next one is from <a href="https://www.daringgourmet.com/doro-wat-spicy-ethiopian-chicken-stew/" target="_blank">Daring Gourmet!</a></p>
+
+    <script src="script.js"></script>
+</body>
+</html>

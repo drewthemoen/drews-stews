@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Goulash</title>
+</head>
+<body>
+    <br>
+    <hr><h2>Goulash</h2><hr>
+    <cite>"Life without tears is like goulash without paprika."<br><sup>Margaret McMullan, Where the Angels Lived.</sup></cite>
+        <nav class="nav-hidden">
+            <ol>Navigation Menu</ol>
+            <li><a href="index.html">Home Page</a></li>
+            <li><a href="review.html">Review Page</a></li>
+            <li><a href="contact.html">Contact Page</a></li>
+            <li><a href="index.html#enstewclopedia">Enstewclopedia</a></li>
+            <li><a href="stewquiz.html">Stew Quiz</a></li></li>
+        </nav>
+        <aside id="bookmarkpanel" class="nav-hidden">
+            <p>Bookmarks<p>
+            <dl id="bookmarklist"></dl>
+            <button id="addbookmark">Save Stew</button>
+            <button id="clearbookmarks">Clear Bookmarks</button>
+        </aside>
+
+        <div class="pageSettings"> 
+            <label for="pagecolorpicker">Page Color: </label>
+            <input type="color" id="pagecolorpicker">
+            <label for="textcolorpicker">Text Color: </label>
+            <input type="color" id="textcolorpicker">
+            <label for="fontsizecontrol">Font size:</label>
+            <input type="range" id="fontsizecontrol" min="8" max="40" value="24">
+            <span id="fontsizevalue">24px</span>
+        </div>
+
+        <div class="buttons">
+            <button id="resetcolors">Reset Colors</button>
+            <button id="navbutton">Navigation Menu</button>
+            <button id="randombutton">Random Stew</button>
+            <button id="bookmarkbutton">Bookmarks</button>
+            <button id="home">Home</button>
+        </div>
+        
+    <figure>
+    <sup>Note: Clicking the picture below will take you to this stew's wikipedia page.</sup>
+    <br>
+    <a href="https://en.wikipedia.org/wiki/Goulash" target="_blank"><img id="stewpic" src="beefgoulash.png" alt="Ground Beef Goulash" width="500" height="500"></a>
+    <figcaption><strong>Ground Beef Goulash</strong></figcaption>
+    </figure>
+    <br>
+    <table>
+        <caption><b>Information Per Serving</b></caption>
+        <tr>
+            <th>Cost</th>       
+            <th>Time</th>
+            <th>Cals</th>
+        </tr>
+        <tr>
+            <td>$2.05</td>
+            <td>110 Mins</td>
+            <td>467 kcal</td>
+        </tr>
+    </table>
+    <br>
+    <sup>These estimations are based on the following recipe and may vary: <a href="https://www.budgetbytes.com/goulash/" target="_blank">Budget Bytes</a></sup>
+    <br>
+    <br>
+    <h2>Stew Analysis</h2>
+    <br>
+    <br>
+    <p class="stewparagraph">Goulash is a type of Hungarian stew made with meat, vegetables, paprika, and other spices. At the time it was
+        created, which was possibly a <em>thousand years ago</em>, it was a simple dish which could be easily be prepared by
+        adding sun-dried ingredients with water. That meant you could keep it for a long time, and whip it up
+        whenever you got hungry. It's come a long way since then, and is arguably one of the most well-known
+        stews in the world <em>to this day</em>!
+        <br>
+        <br>
+        <br>
+        Goulash can be eaten on its own, or paired with bread and other sides. Much like other stews, it plays very well with others.
+        With this stew in particular, however, it is important to use a large pot. This helps prevent burning, overflow, and makes
+        sure that there is enough to give a bowl to Drew.
+
+    </p>
+    <br>
+    <br>
+    <h2>Fundamental Ingredients</h2>
+    <p class="stewparagraph"><i>★ As you can see, Goulash will look very different depending on what you put in it! <br>
+        Today, there are even varieties of <a href="https://www.kathysvegankitchen.com/vegan-goulash/" target="_blank"> vegan</a> Goulash that use lentils and mushrooms instead of meat.
+    </i></p>
+    <div id="picwrap">
+        <img id="stewpic" src="goulash.jpg" alt="Goulash being cooked" width="500">
+        <img id="iconpic" src="ingredientsicon.png" alt="ingredients icon" width="300">
+    </div>
+    <br>
+    <br>
+    <p>Below, I've included a checklist for the most necessary ingredients. Feel free to use it for your own Goulash creations! <sup>bad pun, sorry.</sup></p>
+    <dl id="ingredients">
+        <li><input type="checkbox">Paprika! You can add other spices, too.</li>
+        <li><input type="checkbox">Any type of meats or lentils and mushrooms.</li>
+        <li><input type="checkbox">Any kind of fat like lard or oil.</li>
+        <li><input type="checkbox">Onions. These will add layers to the stew.</li0>
+    </dl>
+    <hr>
+    <p class="stewparagraph"><i>★ You can make a variety of different types of Goulash by switching up just a few ingredients. For example, using
+        mutton is part of a traditional Hungarian style called <a href="https://en.wikipedia.org/wiki/Goulash#Hungarian_varieties">Mutton Gulyás</a>.
+    </p>
+
+    <script src="script.js"></script>
+</body>
+</html>

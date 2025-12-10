@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Drew Moen Final Project - Feedback Page</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+         <nav class="nav-hidden">
+            <ol>Navigation Menu</ol>
+            <li><a href="index.html">Home Page</a></li>
+            <li><a href="review.html">Review Page</a></li>
+            <li><a href="contact.html">Contact Page</a></li>
+            <li><a href="index.html#enstewclopedia">Enstewclopedia</a></li>
+            <li><a href="stewquiz.html">Stew Quiz</a></li></li>
+        </nav>
+        <aside id="bookmarkpanel" class="nav-hidden">
+            <p>Bookmarks<p>
+            <dl id="bookmarklist"></dl>
+            <button id="addbookmark">Save Stew</button>
+            <button id="clearbookmarks">Clear Bookmarks</button>
+        </aside>
+        <div class="pageSettings"> 
+            <label for="pagecolorpicker">Page Color: </label>
+            <input type="color" id="pagecolorpicker">
+            <label for="textcolorpicker">Text Color: </label>
+            <input type="color" id="textcolorpicker">
+            <label for="fontsizecontrol">Font size:</label>
+            <input type="range" id="fontsizecontrol" min="8" max="40" value="24">
+            <span id="fontsizevalue">24px</span>
+        </div>
+        <div class="buttons">
+            <button id="resetcolors">Reset Colors</button>
+            <button id="navbutton">Navigation Menu</button>
+            <button id="randombutton">Random Stew</button>
+            <button id="bookmarkbutton">Bookmarks</button>
+            <button id="home">Home</button>
+        </div>
+        <div class="repeatedicon"></div>
+        <main class="page-content">
+        <form id="ratingForm">
+            <label for="rating"><b>What did you think of the site? Enter a number(1–5):</b></label>
+            <br>
+            <br>
+            <input type="number" id="rating" name="rating" min="1" max="5" required>
+        </form>
+        <h3>And thank you again for visiting! Afterwards, you will be directed to a contact page for more specific input.</h3>
+        <h4>Please, be honest with your feedback, as it will help improve my stews.</h4>
+        </main>
+
+        <footer>
+        </footer>
+        <div class="repeatedicon"></div>
+        <script src="script.js"></script>
+    </body>
+    </html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Irish Stew</title>
+</head>
+<body>
+    <br>
+    <hr><h2>Irish Stew</h2><hr>
+    <cite>"The stewiest stew that ever did stew."<br><sup>Anonymous</sup></cite>
+        <nav class="nav-hidden">
+            <ol>Navigation Menu</ol>
+            <li><a href="index.html">Home Page</a></li>
+            <li><a href="review.html">Review Page</a></li>
+            <li><a href="contact.html">Contact Page</a></li>
+            <li><a href="index.html#enstewclopedia">Enstewclopedia</a></li>
+            <li><a href="stewquiz.html">Stew Quiz</a></li></li>
+        </nav>
+        <aside id="bookmarkpanel" class="nav-hidden">
+            <p>Bookmarks<p>
+            <dl id="bookmarklist"></dl>
+            <button id="addbookmark">Save Stew</button>
+            <button id="clearbookmarks">Clear Bookmarks</button>
+        </aside>
+
+        <div class="pageSettings"> 
+            <label for="pagecolorpicker">Page Color: </label>
+            <input type="color" id="pagecolorpicker">
+            <label for="textcolorpicker">Text Color: </label>
+            <input type="color" id="textcolorpicker">
+            <label for="fontsizecontrol">Font size:</label>
+            <input type="range" id="fontsizecontrol" min="8" max="40" value="24">
+            <span id="fontsizevalue">24px</span>
+        </div>
+
+        <div class="buttons">
+            <button id="resetcolors">Reset Colors</button>
+            <button id="navbutton">Navigation Menu</button>
+            <button id="randombutton">Random Stew</button>
+            <button id="bookmarkbutton">Bookmarks</button>
+            <button id="home">Home</button>
+        </div>
+        
+    <figure>
+    <sup>Note: Clicking the picture below will take you to this stew's wikipedia page.</sup>
+    <br>
+    <a href="https://en.wikipedia.org/wiki/Irish_stew" target="_blank"><img id="stewpic" src="irishstew.jpeg" alt="Irish Stew" width="500" height="500"></a>
+    <figcaption><strong>The Quintessential Irish Stew</strong></figcaption>
+    </figure>
+    <br>
+    <table>
+        <caption><b>Information Per Serving</b></caption>
+        <tr>
+            <th>Cost</th>       
+            <th>Time</th>
+            <th>Cals</th>
+        </tr>
+        <tr>
+            <td>$2.75</td>
+            <td>125 Mins</td>
+            <td>337 kcal</td>
+        </tr>
+    </table>
+    <br>
+    <sup>These estimations are based on the following recipe and may vary: <a href="https://www.budgetbytes.com/beef-stew/" target="_blank">Budget Bytes</a></sup>
+    <br>
+    <br>
+    <h2>Stew Analysis</h2>
+    <br>
+    <br>
+    <p class="stewparagraph">When I think of the word <i>stew</i>, this particular
+        stew may be the first thing that pops up in my mind. As far as stews go, Irish stew stands out as
+        a very comforting stew. You've got all of the classic stew ingredients you'd think of: meats, potatoes, 
+        carrots, and a broth of choice. If I were to come down with an illness, this would be one of the go-tos. 
+        <br>
+        <br>
+        <img src="PO-TAY-TOES.gif" alt="Samwise Gamgee saying 'PO-TAY-TOES'" width="300">
+        <br>
+        <br>
+        The potatoes that go into this stew remain a staple of Ireland, and as you can probably tell by how present that
+        ingredient is in several other stews on this site, they are incredibly versatile. As Samwise Gamgee once said,
+        <i>"Potatoes! Boil 'em, mash 'em, stick 'em in a stew!"</i>
+        <br>
+        <br>
+        If chili didn't exist, this would probably be my favorite stew, too. It's savory, it's awesome, it's still got a 
+        good amount of broth, and there's a ton of regional varieties. It's just everything a stew should be.
+    </p>
+    <br>
+    <br>
+    <h2>Fundamental Ingredients</h2>
+    <p class="stewparagraph"><i>★ You might have clocked that the recipe used to gauge cost time and calories doesn't explicitly say
+        <i>Irish Stew</i>. That's because there are several variations, but they share core ingredients. Here's <a href="https://www.simplyrecipes.com/recipes/irish_beef_stew/" target="_blank">another example</a>!
+    </p>
+    <div id="picwrap">
+        <img id="stewpic" src="irishstew2.jpg" alt="Another irish stew example" width="500">
+        <img id="iconpic" src="ingredientsicon.png" alt="ingredients icon" width="300">
+    </div>
+    <br>
+    <br>
+    <p>Below, I've included a checklist for the most necessary ingredients. Variations may change this.</p>
+    <dl id="ingredients">
+        <li><input type="checkbox">The meats. Lamb and/or mutton fit well here.</li>
+        <li><input type="checkbox">PO-TAY-TOES.</li>
+        <li><input type="checkbox">Carrots and onions, to complement the potatoes.</li>
+        <li><input type="checkbox">Dealer's choice of broth.</li>
+        <li><input type="checkbox">Seasonings and herbs.</li>
+    </dl>
+    <hr>
+    <p class="stewparagraph"><i>★ Want to learn more? Not to worry, I included one more link <a href="https://www.worldsfacts.com/16-interesting-facts-about-irish-stew/" target="_blank">here</a>.<br>
+    <sup>Click above to learn a little more about Irish Stew's history and some other stew-themed facts!</sup></p>
+
+    <script src="script.js"></script>
+</body>
+</html>

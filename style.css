@@ -1,0 +1,441 @@
+
+@keyframes brightGlow {
+    from { color: rgba(0, 0, 0, 0.5);}
+    to   { color: white; text-shadow: 0px 0px 30px white; }
+}
+@keyframes fade {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+@keyframes slideUp {
+    from { transform: translate(0, 500px); }
+    to   { transform: translate(0, 0); }
+}
+@keyframes slideDown {
+    from { transform: translate(0, -500px); }
+    to   { transform: translate(0, 0); }
+}
+@keyframes slam {
+    from { transform: translate(50%, -100%) rotate(2070deg); }
+    to   { transform: translate(0, 0) rotate(0deg); }
+}
+
+:root{
+    --userFontSize: 20px;
+}
+
+/*=======================basic selectors ====================================*/
+
+a{
+    text-decoration:double underline;
+    color:inherit;
+    text-decoration-skip-ink: none;
+    text-underline-offset:3px;
+}
+
+a:hover{
+    animation: brightGlow 1s ease-in-out infinite alternate;
+}
+
+a > img:hover{
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.02);
+}
+
+*{
+    font-family: 'Quicksand', sans-serif;
+}
+
+body{
+    background-color:rgb(220, 245, 153);
+    color:darkslategray;
+    text-align:center;
+    font-size:24px;
+}
+
+body.secret{
+    background-image:url(spilledsoup.png);
+    background-size:cover;
+    animation: fade 3s ease-out
+}
+
+body.downpage{
+    background-image: url('websitedownimg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: white;
+}
+
+cite {
+    margin-top:50px;
+    font-size:calc(var(--userFontSize)*1.2);
+}
+
+caption{
+    border:3px solid rgb(0, 0, 0);
+    padding:0px;
+    margin: 0px;
+}
+
+figcaption{
+    justify-self:center;
+    font-size:calc(var(--userFontSize)/1.2);
+    font-style:italic;
+    margin-top:5px;
+    margin-bottom:5px;
+    background-color:rgba(255, 255, 255, 0.4);
+    border:3px transparent;
+    border-radius:15px;
+    width:500px;
+    padding-bottom:5px;
+}
+
+h1{
+    font-size:72px;
+    font-family:'Courier New', Courier, monospace;
+}
+
+h1.backgroundpic{
+    background-image: url(mainicon.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center bottom;
+}
+
+h2{
+    margin:0px;
+    padding:3px;
+    background-color:rgba(255, 255, 255, 0.5);
+    border-top: 15px solid rgba(0, 0, 0, 0.5);
+    border-bottom: 15px solid rgba(0, 0, 0, 0.5);
+    border-radius:15px;
+    font-size:40px;
+    font-weight:bolder;
+    font-family:"Quicksand", sans-serif;
+    
+}
+
+h3{
+    font-size:36px;
+}
+
+h4{
+    font-size:24px;
+}
+
+header{
+    text-align:center;
+}
+
+hr{
+    border:none;
+    margin:0px;
+    padding:0px;
+    height:10px;
+    background-color:rgba(0,0,0,0.7);
+    border-radius:5px;
+}
+
+img{
+    border-radius:15px;
+}
+
+p{
+    font-size:var(--userFontSize);
+}
+
+button{
+    font-size:18px;
+    font-weight:bold;
+    background-color:rgba(200, 200, 200, 0.5);
+    border-radius:7px;
+}
+
+button:hover{
+    font-size:18px;
+    font-weight:bold;
+    background-color:rgba(255, 255, 255, 0.851);
+    text-shadow:5px 5px 20px black;
+    color:grey;
+    animation: brightGlow 1s ease-in-out infinite alternate;
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.02);
+}
+
+input[type="radio"] {
+    display:flex;
+    opacity:0;
+    justify-content: center;
+    align-items: center; 
+}
+
+input[type="number"]{
+    font-size:84px;
+    color:inherit;
+    font-weight:bolder;
+    animation: fade 2s ease-in-out;
+    border:transparent;
+    border-radius:10px;
+    background-color:rgba(255, 255, 255, 0.3);
+}
+
+label:has(input[type="radio"]:checked){   
+    background-color:rgba(0, 0, 0, 0.5);
+    text-shadow: 0px 0px 30px white;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    color:white;
+    justify-content: center;
+    align-items: center;
+}
+label:has(input[type="radio"]){
+    background-color:rgba(0, 0, 0, 0.1);
+    margin-top:4px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+label:has(input[type="radio"]):hover{
+    background-color:rgba(0, 0, 0, 0.3);
+    margin-top:4px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    animation: brightGlow 1s ease-in-out infinite alternate;
+}
+
+nav{
+    position: fixed;
+    top: 30vh;
+    left: 0;
+    width: 200px;
+    max-height:50vh;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: left;
+    transform: translateX(0);
+    opacity: 1;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    overflow-y:auto;
+    overflow-x:none;
+    box-shadow:0 0 20px 20px rgba(255, 255, 255, 0.4);
+}
+
+nav.nav-hidden {
+    transform: translateX(-100%);   
+    opacity: 0;
+}
+sup{
+    font-size:calc(var(--userFontSize)/2);
+    margin-top:10px;
+}
+
+table{
+    display:inline-block;
+    background-color:rgba(255, 255, 255, 0.4);
+    text-align:left;
+    border:3px solid black;
+    padding:5px;
+}
+
+th, td{
+    border:3px solid black;
+    padding:5px;
+    margin:5px;
+    justify-content:center;
+    text-align:center;
+}
+
+ul{
+    text-align:left;
+    font-weight:bold;
+}
+
+li {
+    margin-bottom:15px;
+}
+
+/*==========================id selectors ===================================*/
+
+#stewpic{
+    position:relative;
+    z-index:1;
+    border:5px solid rgba(0,0,0,0.7);
+    border-radius:15px;
+    box-shadow:5px 5px 20px black;
+    margin-top:0px;
+    margin-bottom:10px;
+}
+
+#ingredients{
+    margin-left:25%;
+    text-align:left;
+    background-color:rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 10px;
+    width:50%;
+    list-style-type:none;
+    font-size:calc(var(--userFontSize)*1.2);
+}
+
+#bookmarkpanel{
+    position: fixed;
+    top: 30vh;
+    right: 0;
+    width: 200px;
+    max-height:50vh;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: right;
+    transform: translateX(0);
+    opacity: 1;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    overflow-y:auto;
+    overflow-x:none;
+    box-shadow:0 0 20px 20px rgba(255, 255, 255, 0.4);
+}
+
+#bookmarkpanel.nav-hidden {
+    transform: translateX(100%);   
+    opacity: 0;
+}
+
+#formErrors{
+position:fixed;
+bottom:10px;
+left:20px;
+background-color:rgba(255, 0, 0, 0.3);
+padding:10px; border:2px solid rgba(255, 0, 0, 0.5);
+display:none;
+border-radius: 15px;
+}
+
+#formSuccess{
+position:fixed;
+bottom:10px;
+left:20px;
+background-color:rgba(204, 255, 204, 0.3);
+padding:10px; 
+ border:2px solidrgba(0, 255, 0, 0.5);
+display:none;
+}
+
+#holidayDrew{
+    width:300px;
+    position:absolute;
+    bottom:20px;
+    right:80px;
+}
+
+#ratingForm{
+    font-size:50px;
+    margin-top:20vh;
+    text-align:center;
+    display:inline-block;
+}
+
+#rating {
+    text-align: center;
+    width: 200px;
+    height: 100px;
+    font-size: 48px;
+    padding: 5px;
+}
+
+#iconpic{
+    position:absolute;
+    z-index:100;
+    top:-12%;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+#picwrap{
+    margin: 0 auto;
+    width:500px;
+    position:relative;
+}
+
+/*===================================class selectors ========================================*/
+
+.repeatedicon{
+    align-content: center;
+    text-align:center;
+    background-image: url(ladle.png);
+    background-repeat: repeat;
+    background-size: 510px 50px;
+    width:100%;
+    height:50px;
+}
+
+.buttons {
+    position:fixed;
+    top:0px;
+    right:20px;
+    padding-left:5px;
+    padding-right:5px;
+    animation: slideDown 1s ease-in-out;
+    z-index:1000;
+    
+}
+
+.pageSettings {
+    position: fixed;
+    top:5px;
+    left:20px;
+    padding-left:5px;
+    padding-right:5px;
+    animation: slideDown 1s ease-in-out;
+    font-weight:bold;
+    background-color:rgba(200, 200, 200, 0.5);
+    z-index:1000;
+}
+
+
+.chilimanlogoimg{
+    animation: slam 2s ease-in-out;
+    position:absolute;
+    translate:-500px -450px;
+}
+
+
+.stewparagraph{
+    font-size:var(--userFontSize);
+    background-color:rgba(255, 255, 255, 0.4);
+    border: 3px transparent;
+    border-radius:15px;
+    padding-top:50px;
+    padding-bottom:50px;
+    padding-left:5px;
+    padding-right:5px;
+}
+
+.hidden {
+  display: none;
+}
+
+
+.stewlist{
+    border:5px solid rgba(0, 0, 0, 0.8);
+    border-radius:10px;
+    background-color:rgba(255, 255, 255, 0.4);
+    display:inline-block;
+    width:15%;
+    text-align:center;
+}
+
+.two{
+    animation: fade 2s ease-in-out;
+    font-size:48px;
+    color:rgb(255, 255, 255);
+    text-align:right;
+    margin-right:-450px;
+    text-shadow:5px 5px 20px black;
+}

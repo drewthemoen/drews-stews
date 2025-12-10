@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Beef Bourguignon</title>
+</head>
+<body>
+    <br>
+    <hr><h2>Beef Bourguignon</h2><hr>
+    <cite>"I am running out of quotes to use here."<br><sup>Anonymous</sup></cite>
+        <nav class="nav-hidden">
+            <ol>Navigation Menu</ol>
+            <li><a href="index.html">Home Page</a></li>
+            <li><a href="review.html">Review Page</a></li>
+            <li><a href="contact.html">Contact Page</a></li>
+            <li><a href="index.html#enstewclopedia">Enstewclopedia</a></li>
+            <li><a href="stewquiz.html">Stew Quiz</a></li></li>
+        </nav>
+        <aside id="bookmarkpanel" class="nav-hidden">
+            <p>Bookmarks<p>
+            <dl id="bookmarklist"></dl>
+            <button id="addbookmark">Save Stew</button>
+            <button id="clearbookmarks">Clear Bookmarks</button>
+        </aside>
+
+        <div class="pageSettings"> 
+            <label for="pagecolorpicker">Page Color: </label>
+            <input type="color" id="pagecolorpicker">
+            <label for="textcolorpicker">Text Color: </label>
+            <input type="color" id="textcolorpicker">
+            <label for="fontsizecontrol">Font size:</label>
+            <input type="range" id="fontsizecontrol" min="8" max="40" value="24">
+            <span id="fontsizevalue">24px</span>
+        </div>
+
+        <div class="buttons">
+            <button id="resetcolors">Reset Colors</button>
+            <button id="navbutton">Navigation Menu</button>
+            <button id="randombutton">Random Stew</button>
+            <button id="bookmarkbutton">Bookmarks</button>
+            <button id="home">Home</button>
+        </div>
+        
+    <figure>
+    <sup>Note: Clicking the picture below will take you to this stew's wikipedia page.</sup>
+    <br>
+    <a href="https://en.wikipedia.org/wiki/Beef_bourguignon" target="_blank"><img id="stewpic" src="bourguignon.jpg" alt="Beef Bourguignon" width="500" height="500"></a>
+    <figcaption><strong>Beef Bourguignon</strong></figcaption>
+    </figure>
+    <br>
+    <table>
+        <caption><b>Information Per Serving</b></caption>
+        <tr>
+            <th>Cost</th>       
+            <th>Time</th>
+            <th>Cals</th>
+        </tr>
+        <tr>
+            <td>~$5.00</td>
+            <td>180+ Mins</td>
+            <td>358 kcal</td>
+        </tr>
+    </table>
+    <br>
+    <sup>These estimations are based on the following recipe and may vary: <a href="https://www.inflationbites.com/post/beef-bourguignon-on-a-budget" target="_blank">Inflation Bites</a>, <a href="https://www.eatthismuch.com/calories/beef-bourguignon-3086940" target="_blank">Eat This Much</a></sup>
+    <br>
+    <br>
+    <h2>Stew Analysis</h2>
+    <br>
+    <br>
+    <p class="stewparagraph">If you are in the position I was in once, you may be surprised to find out that beef bourguignon is
+         indeed a stew, and it does not mess around. This is one of the more difficult stews to prepare, with <strong>several recipes
+         topping out at over 3 hours</strong>, but if you can handle the slog, you're in for one of the fullest, most flavorful stews
+         out there.
+        <br>
+        <br>
+        <br>
+        Beef Bourguignon, also known as Beef Burgundy, is a French stew that comes from the Burgundy region of France. 
+        It's called that because it's cooked with red wine. Since the meat can be tough, this is why it takes so long to cook
+        this way. This cooking style is known as <a href="https://en.wikipedia.org/wiki/Braising" target="_blank">braising</a>. 
+        First searing, then cooking at a low temperature for a very long time.
+        <br>
+        <br>
+    </p>
+    <br>
+    <br>
+    <h2>Fundamental Ingredients</h2>
+    <p class="stewparagraph">★ In spite of the cost compared to some other recipes I've showed you so far, beef bourguignon
+        was actually <a href="https://www.gamberorossointernational.com/news/food-news/boeuf-bourguignon-history-origins-and-interesting-facts-about-this-iconic-french-dish" target="_blank">originally a peasant dish</a>. Slow-cooking meant tough cuts of meat became palatable.
+    </p>
+    <div id="picwrap">
+        <img id="stewpic" src="cow.jpg" alt="Cow" width="500">
+        <img id="iconpic" src="ingredientsicon.png" alt="ingredients icon" width="300" style="transform: translateX(-250px);">
+    </div>
+    <br>
+    <br>
+    <p>Below, I've included a checklist for the most necessary ingredients.</p>
+    <dl id="ingredients">
+        <li><input type="checkbox">Beef.<sup>50% beef</sup></li>
+        <li><input type="checkbox">Red wine base.<sup>50% bourguignon</sup></li>
+        <li><input type="checkbox">Thickening Agent, like flour.</li>
+        <li><input type="checkbox">Onions, carrots, garlic.</li>
+        <li><input type="checkbox">Mushrooms.</li>
+        <li><input type="checkbox">Spices: thyme, bay leaf, salt, pepper.</li>
+    </dl>
+    <hr>
+    <p class="stewparagraph"><i>★ There are other types of bourguignons as well. One such type is called
+        <a href="https://homecookingcollective.com/mushroom-bourguignon/" target="_blank">Mushroom Bourguignon</a><br>
+        <sup>Click the link for a recipe.</sup>
+    </p>
+
+    <script src="script.js"></script>
+</body>
+</html>

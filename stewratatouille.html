@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Ratatouille</title>
+</head>
+<body>
+    <br>
+    <hr><h2>Ratatouille</h2><hr>
+    <cite>"Anyone can cook, but only the fearless can be great."<br><sup>Chef Gusteau, Ratatouille</sup></cite>
+        <nav class="nav-hidden">
+            <ol>Navigation Menu</ol>
+            <li><a href="index.html">Home Page</a></li>
+            <li><a href="review.html">Review Page</a></li>
+            <li><a href="contact.html">Contact Page</a></li>
+            <li><a href="index.html#enstewclopedia">Enstewclopedia</a></li>
+            <li><a href="stewquiz.html">Stew Quiz</a></li></li>
+        </nav>
+        <aside id="bookmarkpanel" class="nav-hidden">
+            <p>Bookmarks<p>
+            <dl id="bookmarklist"></dl>
+            <button id="addbookmark">Save Stew</button>
+            <button id="clearbookmarks">Clear Bookmarks</button>
+        </aside>
+        <div class="pageSettings"> 
+            <label for="pagecolorpicker">Page Color: </label>
+            <input type="color" id="pagecolorpicker">
+            <label for="textcolorpicker">Text Color: </label>
+            <input type="color" id="textcolorpicker">
+            <label for="fontsizecontrol">Font size:</label>
+            <input type="range" id="fontsizecontrol" min="8" max="40" value="24">
+            <span id="fontsizevalue">24px</span>
+        </div>
+
+        <div class="buttons">
+            <button id="resetcolors">Reset Colors</button>
+            <button id="navbutton">Navigation Menu</button>
+            <button id="randombutton">Random Stew</button>
+            <button id="bookmarkbutton">Bookmarks</button>
+            <button id="home">Home</button>
+        </div>
+        
+    <figure>
+        <sup>Note: Clicking the picture below will take you to this stew's wikipedia page.</sup>
+        <br>
+        <a href="https://en.wikipedia.org/wiki/Ratatouille" target="_blank"><img id="stewpic" src="ratatouille.jpg" alt="Stewed Ratatouille" width="500" height="500"></a>
+        <figcaption><strong>Stewed Ratatouille</strong></figcaption>
+    </figure>
+    <br>
+    <table>
+        <caption><b>Information Per Serving</b></caption>
+        <tr>
+            <th>Cost</th>       
+            <th>Time</th>
+            <th>Cals</th>
+        </tr>
+        <tr>
+            <td>$0.81<sup>woah!</sup></td>
+            <td>65 Mins</td>
+            <td>467 kcal</td>
+        </tr>
+    </table>
+    <br>
+    <sup>These estimations are based on the following recipe and may vary: <a href="https://www.budgetbytes.com/oven-roasted-ratatouille/" target="_blank">Budget Bytes</a></sup>
+    <br>
+    <br>
+    <h2>Stew Analysis</h2>
+    <br>
+    <br>
+    <p class="stewparagraph">My first introduction to this stew was through the Pixar movie of that same name.
+        I'm leading with this because that movie had a big impact on me as a kid, and this was also
+        referenced in almost every online recipe I found for ratatouille. For what it's worth,
+        all forms of ratatouille I've had are incredible. Ratatouille is a traditional French stewed vegetable dish.
+        Typically, it's made of sliced vegetables like eggplant, tomatoes, and others.
+        <br>
+        <br>
+        <br>
+        <img src="burntfood.gif" alt="burning food in an oven" width="500"><br>
+        <sup>"Just cut off the burnt parts! It's probably fine."</sup>
+        <br>
+        <br>
+        <br>
+        There's a another peculiar thing about this stew. That is because, and it pains me to admit this, that <strong>
+        it isn't always a stew.</strong> That's right. Ratatouille is sort of like Schrodinger's Stew depending
+        on how you make it. I made sure to include a photo of its stewed variety, but you will soon see
+        another variant known as <a href="https://en.wikipedia.org/wiki/Confit_byaldi" target="_blank">Confit Byaldi</a>.
+        In that case, you finish off by baking it.<br>
+        <strong>This is actually the variant shown in the movie!</strong>
+    </p>
+    <br>
+    <br>
+    <h2>Fundamental Ingredients</h2>
+    <p class="stewparagraph"><i>★ Wanna try confit byaldi instead? I begrudgingly included that recipe
+        on this <strong>stew-themed website</strong> as well! <a href="https://mission-food.com/remys-ratatouille-confit-byaldi/" target="_blank">Check it out here!</a>
+        <br><sup>Confit Byaldi is amazing, but I've got a theme going here.</sup>
+    </p>
+    <div id="picwrap">
+        <img id="stewpic" src="confitbyaldi.jpg" alt="A plate of finished confit byaldi" width="500">
+        <img id="iconpic" src="ingredientsicon.png" alt="ingredients icon" width="300" style="transform: translate(-50%,50%);">
+    </div>
+    <br>
+    <br>
+    <p>Below, I've included a checklist for ratatouille. It might sound daunting, but most of these you can find
+        adjacent to one another at your average grocery store.
+    </p>
+    <dl id="ingredients">
+        <li><input type="checkbox">Zucchini.</li>
+        <li><input type="checkbox">Tomatoes.</li>
+        <li><input type="checkbox">Garlic.</li>
+        <li><input type="checkbox">Onions.</li>
+        <li><input type="checkbox">Eggplant.</li>
+        <li><input type="checkbox">Bell Peppers.</li>
+        <li><input type="checkbox">Oil.</li>
+        <li><input type="checkbox">Herbs.<sup>Switch it up depending on the ratatouille!</sup></li>
+    </dl>
+    <hr>
+    <p class="stewparagraph"><i>★ Of the stews I familiarized myself with over the course of this project
+        I quickly found ratatouille was not only delicious but arguably the best value.<sup>(in a very narrow sample size)</sup><br>
+         The best way
+        to prepare it is to have a rat guide you through the process, but if you can't find a good rat, I would
+        try <a href="https://www.howtocook.recipes/homemade-ratatouille-recipe/" target="_blank">this recipe</a>.
+    </p>
+
+    <script src="script.js"></script>
+</body>
+</html>

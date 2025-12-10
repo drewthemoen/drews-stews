@@ -1,0 +1,206 @@
+    <!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <title>Stew Quiz</title>
+            <link rel="stylesheet" href="style.css">
+            <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        </head>
+        <body>
+        <div class="repeatedicon"></div>
+        <nav class="nav-hidden">
+            <ol>Navigation Menu</ol>
+            <li><a href="index.html">Home Page</a></li>
+            <li><a href="review.html">Review Page</a></li>
+            <li><a href="contact.html">Contact Page</a></li>
+            <li><a href="sitemap.html">Enstewclopedia</a></li>
+            <li><a href="stewquiz.html">Stew Quiz</a></li></li>
+        </nav>
+        <aside id="bookmarkpanel" class="nav-hidden">
+            <p>Bookmarks<p>
+            <dl id="bookmarklist"></dl>
+            <button id="addbookmark">Save Stew</button>
+            <button id="clearbookmarks">Clear Bookmarks</button>
+        </aside>
+        <div class="pageSettings"> 
+            <label for="pagecolorpicker">Page Color: </label>
+            <input type="color" id="pagecolorpicker">
+            <label for="textcolorpicker">Text Color: </label>
+            <input type="color" id="textcolorpicker">
+            <label for="fontsizecontrol">Font size:</label>
+            <input type="range" id="fontsizecontrol" min="8" max="40" value="24">
+            <span id="fontsizevalue">24px</span>
+        </div>
+        <div class="buttons">
+            <button id="resetcolors">Reset Colors</button>
+            <button id="navbutton">Navigation Menu</button>
+            <button id="randombutton">Random Stew</button>
+            <button id="bookmarkbutton">Bookmarks</button>
+            <button id="home">Home</button>
+        </div>
+            <header>
+                <h1>Let's Find a Stew for You!</h1>
+                <img id="stewpic" src="detectivesoupman.png" alt="detective soup man" width="500"><br>
+                <div class="repeatedicon"></div>
+                <p class="stewparagraph">Answer the following questions to find out which stew best matches your personality!
+                    I've concocted a series of 10 questions, each more daunting than the one before.
+                    <br>
+                    <br>
+                    After you've taken the quiz, I'll do some calculating and determine beyond a shadow of doubt which 
+                    stew would be best for you, and a link to see more if you're curious.
+                    There are (mostly) no wrong answers here, so just pick whatever feels right to you. Enjoy!
+                </p>
+                <div id="quizResult"></div>
+                <br>
+                <br>
+                <br>
+                <nav class="nav-hidden">
+                    <p>Navigation Links<p> <!--this page only I've got nav menu linked to each question-->
+                        <p><a href="#q1">Question 1</a></p>
+                        <p><a href="#q2">Question 2</a></p>
+                        <p><a href="#q3">Question 3</a></p>
+                        <p><a href="#q4">Question 4</a></p>
+                        <p><a href="#q5">Question 5</a></p>
+                        <p><a href="#q6">Question 6</a></p>
+                        <p><a href="#q7">Question 7</a></p>
+                        <p><a href="#q8">Question 8</a></p>
+                        <p><a href="#q9">Question 9</a></p>
+                        <p><a href="#q10">Question 10</a></p>
+                </nav>
+            </header>
+
+            <main id="pageContent">
+                <form id="stewQuizForm">
+                    <section id="q1">
+                        <hr>
+                        <h2>Question 1: What's your favorite season? This question will establish a baseline.</h2>
+                        <hr>
+                        <br>
+                        <img src="seasons.jpg" alt="four seasons" width="600"><br>
+                        <label><input type="radio" name="q1" value="4">Winter</label>
+                        <label><input type="radio" name="q1" value="2">Spring</label>
+                        <label><input type="radio" name="q1" value="3">Summer</label>
+                        <label><input type="radio" name="q1" value="1">Fall</label>
+                        <br>
+                    </section>
+                    <section id="q2">
+                        <hr>
+                        <h2>Question 2: Where would you say you <i>usually</i> prefer food on the spice scale?</h2>
+                        <hr>
+                        <br>
+                        <img src="scoville.png" alt="scoville scale" width="600"><br>
+                        <label><input type="radio" name="q2" value="3">No Spice</label>
+                        <label><input type="radio" name="q2" value="1">Mild</label>
+                        <label><input type="radio" name="q2" value="2">Spicy</label>
+                        <label><input type="radio" name="q2" value="4">Beyond Heat</label>
+                        <br>
+                    </section>
+                    <section id="q3">
+                        <hr>
+                        <h2>Question 3: Whoops, you accidentally swapped diced apples for potatoes in your Irish stew. Do you...</h2>
+                        <hr>
+                        <br>
+                        <img src="bobbing.jpg"  alt="apple bobbing" width="600"><br>
+                        <label><input type="radio" name="q3" value="1">Pick out the apples</label>
+                        <label><input type="radio" name="q3" value="4">Make something else - stew's not even that good, anyway.</label>
+                        <label><input type="radio" name="q3" value="3">Leave them in, but don't tell anyone. It probably tastes the same.</label>
+                        <label><input type="radio" name="q3" value="2">Try and turn it into a beef and cider stew.</label>
+                        <br>
+                    </section>
+                    <section id="q4">
+                        <hr>
+                        <h2>Question 4: If you could only eat <i>one</i> category of food for the rest of your life, which would you pick?</h2>
+                        <hr>
+                        <br>
+                        <img src="scoobydoosandwich.jpg" alt="scooby doo sandwich" width="600"><br> <!--"I just think that a Scooby-Doo sandwich would fix me."-->
+                        <label><input type="radio" name="q4" value="2">Sandwiches - lot of customizability there.</label>
+                        <label><input type="radio" name="q4" value="3">Pizza - again, lots of options.</label>
+                        <label><input type="radio" name="q4" value="1">Stew - no wrong answers in a peronality quiz.</label>
+                        <label><input type="radio" name="q4" value="4">Wildcard - something else entirely.</label>
+                        <br>
+                    </section>
+                    <section id="q5">
+                        <hr>
+                        <h2>Question 5: Which vegetable do you think is the most stew-worthy?</h2>
+                        <hr>
+                        <br>
+                        <img src="stewvegetables.png"   alt="stew vegetables" width="600"><br>  
+                        <label><input type="radio" name="q5" value="2">Carrot</label>
+                        <label><input type="radio" name="q5" value="1">Potato</label>
+                        <label><input type="radio" name="q5" value="3">Celery</label>
+                        <label><input type="radio" name="q5" value="4">Onion</label>
+                        <br>
+                    </section>
+                    <section id="q6">
+                        <hr>
+                        <h2>Question 6: How long should a stew simmer?</h2>
+                        <hr>
+                        <br>
+                        <img src="cookingpot.gif" alt="cooking pot" width="600"><br>
+                        <label><input type="radio" name="q6" value="2">15-30 Minutes</label>
+                        <label><input type="radio" name="q6" value="1">1-2 Hours</label>
+                        <label><input type="radio" name="q6" value="99">I don't like stew.</label> <!--I'm maxing the value on this one. If anyone picks it, automatic anti-stew result.-->
+                        <label><input type="radio" name="q6" value="3">Set it to simmer overnight and wake up to the smell of delicious stew.</label>
+                        <br>
+                    </section>
+                    <section id="q7">
+                        <hr>
+                        <h2>Question 7: What is your <i>favorite</i> type of broth?</h2>
+                        <hr>
+                        <br>
+                        <img src="broth.png"    alt="broth" width="600"><br>
+                        <label><input type="radio" name="q7" value="2">Chicken</label>
+                        <label><input type="radio" name="q7" value="1">Vegetable</label>
+                        <label><input type="radio" name="q7" value="3">Beef</label>
+                        <label><input type="radio" name="q7" value="4">Other</label>
+                        <br>
+                    </section>
+                    <section id="q8">
+                        <hr>
+                        <h2>Question 8: Of these options, which do you believe would be the most unpleasant to clean if spilled?</h2>
+                        <hr>
+                        <br>
+                        <img src="kevinschili.gif" alt="Kevin's chili spill" width="600"><br>
+                        <label><input type="radio" name="q8" value="3">Goulash</label>
+                        <label><input type="radio" name="q8" value="1">Brongkos</label>
+                        <label><input type="radio" name="q8" value="2">Gumbo</label>
+                        <label><input type="radio" name="q8" value="4">Irish Stew</label>
+                        <br>
+                    </section>
+                    <section id="q9">
+                        <hr>
+                        <h2>Question 9: In your estimation, how many days in a row do you think you could eat stew before getting tired of it?</h2>
+                        <hr>
+                        <br>
+                        <img src="timepassing.gif" alt="time passing" width="600"><br>  
+                        <label><input type="radio" name="q9" value="4"> 0 Days.</label>
+                        <label><input type="radio" name="q9" value="3"> 1 Day</label>
+                        <label><input type="radio" name="q9" value="2"> 2 Days</label>
+                        <label><input type="radio" name="q9" value="1"> 3+ Days</label>
+                        <br>
+                    </section>
+                    <section id="q10">
+                        <hr>
+                        <h2>Question 10: Which would you probably <i>first</i> add to a bowl of Chili?</h2>
+                        <hr>
+                        <br>
+                        <img src="chiliwide.jpg" alt="bowl of chili" width="600"><br>
+                        <label><input type="radio" name="q10" value="1">Saltine Crackers</label>
+                        <label><input type="radio" name="q10" value="2">Cheese</label>
+                        <label><input type="radio" name="q10" value="3">Extra Spices</label>
+                        <label><input type="radio" name="q10" value="4">Coffee?</label>
+                        <br>
+                    </section>
+                    <button type="submit">Submit Answers</button>
+                </form> 
+                 <!-- each question has a different value so I could get different "personality types" to occur more often.
+                  I tried experimenting with other scoring styles like having weighted values for certain answers
+                  (and I did keep one in particular I liked), but this worked best in the end.-->
+            </main> 
+            <footer>
+
+            </footer>
+
+            <script src="script.js"></script>
+        </body>
+        </html>

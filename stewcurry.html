@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Curry</title>
+</head>
+<body>
+    <br>
+    <hr><h2>Curry</h2><hr>
+    <cite>"Be the best version of yourself in anything you do."<br><sup>Stephen Curry</sup></cite>
+        <nav class="nav-hidden">
+            <ol>Navigation Menu</ol>
+            <li><a href="index.html">Home Page</a></li>
+            <li><a href="review.html">Review Page</a></li>
+            <li><a href="contact.html">Contact Page</a></li>
+            <li><a href="index.html#enstewclopedia">Enstewclopedia</a></li>
+            <li><a href="stewquiz.html">Stew Quiz</a></li>
+        </nav>
+        <aside id="bookmarkpanel" class="nav-hidden">
+            <p>Bookmarks<p>
+            <dl id="bookmarklist"></dl>
+            <button id="addbookmark">Save Stew</button>
+            <button id="clearbookmarks">Clear Bookmarks</button>
+        </aside>
+        <div class="pageSettings"> 
+            <label for="pagecolorpicker">Page Color: </label>
+            <input type="color" id="pagecolorpicker">
+            <label for="textcolorpicker">Text Color: </label>
+            <input type="color" id="textcolorpicker">
+            <label for="fontsizecontrol">Font size:</label>
+            <input type="range" id="fontsizecontrol" min="8" max="40" value="24">
+            <span id="fontsizevalue">24px</span>
+        </div>
+        <div class="buttons">
+            <button id="resetcolors">Reset Colors</button>
+            <button id="navbutton">Navigation Menu</button>
+            <button id="randombutton">Random Stew</button>
+            <button id="bookmarkbutton">Bookmarks</button>
+            <button id="home">Home</button>
+        </div>
+        
+    <figure>
+        <sup>Note: Clicking the picture below will take you to this stew's wikipedia page.</sup>
+        <br>
+        <a href="https://en.wikipedia.org/wiki/Curry" target="_blank"><img id="stewpic" src="curry.png" alt="Creamy Chicken Curry" width="500" height="500"></a>
+        <figcaption><strong>Creamy Chicken Curry</strong></figcaption>
+    </figure>
+    <br>
+    <table>
+        <caption><b>Information Per Serving</b></caption>
+        <tr>
+            <th>Cost</th>       
+            <th>Time</th>
+            <th>Cals</th>
+        </tr>
+        <tr>
+            <td>$1.86</td>
+            <td>35 Mins</td>
+            <td>615 kcal</td>
+        </tr>
+    </table>
+    <br>
+    <sup>These estimations are based on this coconut curry recipe and may vary depending on other types of curry: <a href="https://www.budgetbytes.com/coconut-curry-chickpeas/" target="_blank">Budget Bytes</a></sup>
+    <br>
+    <br>
+    <h2>Stew Analysis</h2>
+    <br>
+    <br>
+    <p class="stewparagraph">
+        Curry is a term for a very broad category of dishes that come from South Asia, and has
+        since gained popularity around the world. There's anything from Indian curries to Thai curries, 
+        and anything else. Almost all curries are going to have some type of sauce, and have their
+        own unique blend of spices. This might be turmeric, cumin, coriander, etc...
+        <br>
+        <br>
+        <br>
+       The wikipedia page mentions <i>proto-curries</i>, which may not have incorporated some spices
+       like chili pepper. These were brought by the Portuguese during the 16th century,
+       so they wouldn't have been part of the blend yet.
+        <br>
+        <br>
+        <br>
+        Curry is another category of stew that is easy to find enjoyable verions of by virtue of the
+        fact that there are so many variations out there. You can have spicy or mild, meat-based or vegetarian,
+        brothier or thicker, etc. It gives more margin for customization than most.
+    </p>
+    <br>
+    <br>
+    <h2>Fundamental Ingredients</h2>
+    <p class="stewparagraph"><i>★ Here's a kind of <a href="https://www.justonecookbook.com/simple-chicken-curry/" target="_blank"> Japanese chicken curry</a>!
+    </p>
+    <div id="picwrap">
+        <img id="stewpic" src="curry2.png" alt="chicken curry" width="500">
+        <img id="iconpic" src="ingredientsicon.png" alt="ingredients icon" width="300">
+    </div>
+    <br>
+    <br>
+    <p>Below, I've included a checklist for the most necessary ingredients.</p>
+    <dl id="ingredients">
+        <li><input type="checkbox">Spice blend.</li>
+        <li><input type="checkbox">Any type of meats or lentils and mushrooms.</li>
+        <li><input type="checkbox">Any kind of fat like lard or oil.</li>
+        <li><input type="checkbox">Onions, garlic, or ginger.</li>
+        <li><input type="checkbox">Vegetables of choice.</li>
+        <li><input type="checkbox">Broth or coconut milk.</li>
+    </dl>
+    <hr>
+    <p class="stewparagraph"><i>★ I'll leave this page with one last veggie curry to try! I've linked it <a href="https://www.indianhealthyrecipes.com/mixed-vegetable-curry/">here</a>.
+    </p>
+
+    <script src="script.js"></script>
+</body>
+</html>
